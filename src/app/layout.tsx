@@ -41,7 +41,7 @@ export default function RootLayout({
             <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
               <Link href="/" className="space-y-1">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">
-                  Harnoor
+                  
                 </p>
                 <span className="text-2xl font-semibold tracking-tight text-slate-900">
                   Harnoor Kaur
