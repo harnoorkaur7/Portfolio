@@ -12,15 +12,42 @@ const Home: NextPage = () => {
               className="flex-1 text-base leading-relaxed text-slate-600 sm:text-lg"
               style={{ textAlign: "justify" }}
             >
-              Hi! I&apos;m a predoctoral fellow at the Economic Growth Center,
-              Yale University. I am excited about research in development,
+              Hi! I&apos;m a <a
+                href="https://egc.yale.edu/people/harnoor-kaur"
+                className="text-blue-500 hover:text-emerald-700"
+              >
+                predoctoral fellow
+              </a> at the <a
+                href="https://egc.yale.edu/"
+                className="text-blue-500 hover:text-emerald-700"
+              >
+                Economic Growth Center, Yale University
+              </a>. I am excited about research in development,
               environment economics, and political economy! My work looks at
               political movements, climate agreements, social norms, gender
               gaps, and other manifestations of contemporary inequality. 
+
+              I hold an MSc in Economics from the <a
+                href="https://www.lse.ac.uk/economics"
+                className="text-blue-500 hover:text-emerald-700"
+              >
+                London School of Economics and Political Science (LSE)
+              </a> and a B.A. (Honors) in Economics from <a
+                href="https://www.hinducollege.ac.in/index.aspx"
+                className="text-blue-500 hover:text-emerald-700"
+              >
+                 Hindu College, University of Delhi
+              </a>. Prior to this, I worked on energy and environmental research at the <a
+                href="https://www.lse.ac.uk/economics"
+                className="text-blue-500 hover:text-emerald-700"
+              >
+                Energy Policy Institute at the University of Chicago Trust (EPIC India)
+              </a>. 
+              <br />
               You can reach me at{" "}
               <a
                 href="mailto:harnoor.kaur@yale.edu"
-                className="text-blue-500 hover:text-emerald-700 underline break-all"
+                className="text-blue-500 hover:text-emerald-700"
               >
                 harnoor.kaur@yale.edu
               </a>
