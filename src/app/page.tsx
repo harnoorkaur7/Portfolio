@@ -23,7 +23,7 @@ const Home: NextPage = () => {
               >
                 Economic Growth Center, Yale University
               </a>. I am excited about research in development,
-              environment economics, and political economy! My work looks at
+              environmental economics, and political economy. My work examines
               political movements, climate agreements, social norms, gender
               gaps, and other manifestations of contemporary inequality. <br /><br /> 
 

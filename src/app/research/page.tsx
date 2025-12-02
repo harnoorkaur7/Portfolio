@@ -1,119 +1,53 @@
 import type { Metadata } from "next";
 
-const studies = [
-  {
-    title: "Inclusive Learning Framework",
-    year: "2024",
-    summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at elit tincidunt, posuere elit nec, commodo diam.",
-    tags: ["Education", "Field Research", "Workshops"],
-  },
-  {
-    title: "Community Infrastructure Report",
-    year: "2023",
-    summary:
-      "Curabitur quis consequat erat. Nam et laoreet dui. Cras venenatis vel dui nec rutrum. Etiam bibendum maximus sollicitudin.",
-    tags: ["Policy", "Systems Design", "Qualitative"],
-  },
-  {
-    title: "Digital Wellbeing Playbook",
-    year: "2022",
-    summary:
-      "Integer vel convallis mi. Nullam ut ipsum a ex sollicitudin pellentesque sit amet id massa. Integer tempor id sapien eu finibus.",
-    tags: ["Strategy", "Product", "Collaboration"],
-  },
-];
-
-const methods = [
-  "Primary interviews and moderated conversations",
-  "Participatory workshops and lightweight prototyping",
-  "Mixed-method research synthesis",
-  "Story-driven reporting for stakeholders",
-];
-
 export const metadata: Metadata = {
   title: "Research | Harnoor Kaur",
-  description:
-    "Selected research studies, working methods, and areas of inquiry from Harnoor Kaur.",
+  description: "Publications and work in progress by Harnoor Kaur.",
 };
 
 export default function ResearchPage() {
   return (
-    <div className="space-y-6 text-slate-700 sm:space-y-10">
-      <section className="space-y-3 border-b border-slate-200 pb-6 sm:space-y-4 sm:pb-10">
-        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-500">
-          Research
-        </p>
+    <div className="space-y-8 text-slate-700 sm:space-y-12">
+      {/* Page heading */}
+      <section className="space-y-3 border-b border-slate-200 pb-6 sm:space-y-4 sm:pb-8">
+        
         <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-          Curiosity meets structure.
+          Publications
         </h2>
-        <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          bibendum nisl ac tempus blandit. Cras posuere nibh vitae lacinia
-          tristique. Vivamus convallis arcu vel lectus semper, quis aliquet mauris
-          porttitor.
-        </p>
       </section>
 
-      <section className="space-y-4 sm:space-y-6">
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">Selected work</h3>
-          <span className="text-xs uppercase tracking-[0.35em] text-slate-500">
-            2022—2024
-          </span>
-        </div>
-        <div className="space-y-4 divide-y divide-slate-200 border border-slate-200 sm:space-y-6">
-          {studies.map((study) => (
-            <article key={study.title} className="space-y-3 p-4 sm:space-y-4 sm:p-6">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-slate-500">
-                    {study.year}
-                  </p>
-                  <h4 className="text-lg font-semibold text-slate-900 sm:text-xl">
-                    {study.title}
-                  </h4>
-                </div>
-                <div className="flex flex-wrap gap-2 text-xs text-slate-500">
-                  {study.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-slate-300 px-2 py-1 sm:px-3"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-sm leading-relaxed text-slate-600">{study.summary}</p>
-            </article>
-          ))}
+      {/* Publications */}
+      <section className="space-y-3">
+        <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
+          Publication
+        </h3>
+        <div className="space-y-1 text-sm leading-relaxed text-slate-700 sm:text-base">
+          <p>
+            <span className="font-semibold">
+              <a
+                href="https://link.springer.com/article/10.1057/s41294-024-00248-8"
+                className="text-blue-500 hover:text-emerald-700"
+              >
+                Protests on Campus: The Political Economy of Universities and Social Movements
+              </a>
+            </span>{" "}
+            with Noam Yuchtman. <em>Comparative Economic Studies</em>, 66(4), 621–638, 2024.
+          </p>
         </div>
       </section>
 
-      <section className="grid gap-6 border-t border-slate-200 pt-6 sm:gap-8 sm:pt-8 md:grid-cols-2">
-        <div className="space-y-2 sm:space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-500">
-            Approach
-          </p>
-          <h3 className="text-xl font-semibold text-slate-900 sm:text-2xl">
-            How I like to work
-          </h3>
-          <p className="text-sm leading-relaxed text-slate-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
-            vestibulum purus. Nam facilisis, mauris at tempor pulvinar, massa nisi
-            interdum urna, vitae tincidunt turpis sem vel massa.
-          </p>
-        </div>
-        <ul className="space-y-2 sm:space-y-3">
-          {methods.map((method) => (
-            <li key={method} className="rounded-lg border border-slate-200 p-3 sm:p-4">
-              <p className="text-sm text-slate-700">{method}</p>
-            </li>
-          ))}
+      {/* Work in progress */}
+      <section className="space-y-3 border-t border-slate-200 pt-6 sm:pt-8">
+        <h3 className="text-lg font-semibold text-slate-900 sm:text-xl">
+          Work in progress
+        </h3>
+        <ul className="space-y-2 text-sm leading-relaxed text-slate-700 sm:text-base">
+          <li>
+            <span className="font-semibold">Gender gaps?</span> with Maria Kogelnik. Public
+            data collection completed; expert data collection in progress.
+          </li>
         </ul>
       </section>
     </div>
   );
 }
-
